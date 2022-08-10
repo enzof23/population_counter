@@ -9,7 +9,7 @@ export const fetchPopulation = async ({ lat, lng, rad }: Coordinates) => {
   const options = {
     method: "GET",
     headers: {
-      "X-RapidAPI-Key": "6ffdf84ab9msh4b025dde10ca81cp10a1a7jsn60aa4765834e",
+      "X-RapidAPI-Key": process.env.REACT_APP_WORLDGEO_API,
       "X-RapidAPI-Host": "world-geo-data.p.rapidapi.com",
     },
   };
@@ -27,7 +27,7 @@ export const getNextPage = async (url: string) => {
   const options = {
     method: "GET",
     headers: {
-      "X-RapidAPI-Key": "6ffdf84ab9msh4b025dde10ca81cp10a1a7jsn60aa4765834e",
+      "X-RapidAPI-Key": process.env.REACT_APP_WORLDGEO_API,
       "X-RapidAPI-Host": "world-geo-data.p.rapidapi.com",
     },
   };
